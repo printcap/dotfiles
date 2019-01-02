@@ -1,4 +1,4 @@
-# Developement Environment
+# Development Environment
 
 Setup for development environment
 
@@ -9,8 +9,8 @@ Setup for development environment
 ## Ubuntu 18.04
 
 ```bash
-sudo apt install get
 git clone https://github.com/printcap/dotfiles.git
+cd dotfiles
 bash setup_ubuntu.sh
 ```
 
