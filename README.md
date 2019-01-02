@@ -2,17 +2,19 @@
 
 Setup for development environment
 
-- zsh with Oh My Zsh
-- tmux
-- neovim
+- zsh with Oh My Zsh (default shell)
+- tmux with tmux theme pack (green)
+- neovim with support for C/C++, Python, HTML, JavaScript
 
 ## Ubuntu 18.04
 
-Set user password if only login on via pubkey available:
+In case login system was setup via pubkey only (e.g., cloud deployments)
+a user passport must be set. This password will subsequently need to be
+entered when changing the default shell to zsh. The password of user
+`<username>` is set as user `root`.
 
 ```bash
-sudo bash
-passwd <username>
+sudo passwd <username>
 ```
 
 ```bash
@@ -24,5 +26,5 @@ bash setup_ubuntu.sh
 Run and quit with `:q` when done.
 
 ```bash
-vim +PlugInstall +qall
+nvim +PlugInstall +qall
 ```
