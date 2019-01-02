@@ -21,11 +21,11 @@ cp files/.tmux.conf ${HOME}/
 
 # neovim
 sudo apt -y install vim vim-common vim-runtime exuberant-ctags ncurses-term curl
-sudo add-apt-repository ppa:neovim-ppa/stable
+sudo add-apt-repository -y ppa:neovim-ppa/stable
 sudo apt update
 sudo apt -y install python-dev python-pip python3-dev python3-pip neovim
 NEOVIM_CONFIG_DIR=${HOME}/.config/nvim
 mkdir -p ${NEOVIM_CONFIG_DIR}
 cp files/.config/nvim/init.vim ${NEOVIM_CONFIG_DIR}
 echo "\n\n\nExecute"
-echo "vim +PlugInstall +qall"
+echo "nvim +PlugInstall +qall"

@@ -9,6 +9,7 @@ Setup for development environment
 ## Ubuntu 18.04
 
 Set user password if only login on via pubkey available:
+
 ```bash
 sudo bash
 passwd <username>
