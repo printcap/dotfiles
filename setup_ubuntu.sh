@@ -2,7 +2,7 @@
 
 set -o errexit
 set -o nounset
-set -o xtrace 
+set -o xtrace
 set -o pipefail
 
 # Upgrade already installed packages
@@ -14,6 +14,7 @@ sudo apt -y install software-properties-common
 # zsh and tmux
 sudo apt -y install zsh zsh-common tmux wget
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
 cp files/.zshrc ${HOME}/
