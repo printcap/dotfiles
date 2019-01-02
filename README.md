@@ -23,8 +23,13 @@ cd dotfiles
 bash setup_ubuntu.sh
 ```
 
-Run and quit with `:q` when done.
+The "Oh My Zsh" will temporarily enter the zsh shell during setup.
+Type `exit` to exit the shell and let this setup process finish.
+
+Run nvim and let it install all plugins:
 
 ```bash
 nvim +PlugInstall +qall
 ```
+
+Relogin, probably due to the update, also reboot the system.
